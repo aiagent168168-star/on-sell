@@ -28,10 +28,9 @@
   </script>
   <style>
     html { scroll-behavior: smooth; }
-    .gradient-hero { background: radial-gradient(1200px 600px at 80% -10%, rgba(99,102,241,.25), transparent 60%), linear-gradient(135deg,#1e1b4b 0%, #0f172a 60%); }
+    .gradient-hero { background: radial-gradient(circle at 10% 80%, rgba(240, 249, 255, 0.5), transparent 60%), linear-gradient(to bottom, #f9fafb, #ffffff 60%); }
     .glass { background: rgba(255,255,255,0.06); backdrop-filter: blur(8px); }
   </style>
-  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -42,61 +41,59 @@
   }
   </script>
 </head>
-<body class="bg-slate-950 text-slate-100">
-  <!-- Sticky Top Bar CTA -->
-  <div class="fixed top-0 inset-x-0 z-50 glass border-b border-white/10">
+<body class="bg-neutral-50 text-gray-900">
+  <div class="fixed top-0 inset-x-0 z-50 glass border-b border-gray-200">
     <div class="mx-auto max-w-7xl px-4 py-2 flex items-center justify-between text-sm">
-      <div class="flex items-center gap-2">
-        <span class="inline-flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+      <div class="flex items-center gap-2 text-gray-700">
+        <span class="inline-flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
         <span>限時優惠進行中 · 截止倒數 <b id="topCountdown">--:--:--</b></span>
       </div>
-      <a id="ctaTop" class="rounded-xl bg-accent-600 px-4 py-2 font-semibold hover:bg-accent-700 transition shadow shadow-accent-600/30" href="https://AIJobschool.short.gy/lD9nHF">立即加入</a>
+      <a id="ctaTop" class="rounded-xl bg-blue-600 px-4 py-2 font-semibold text-white hover:bg-blue-700 transition shadow shadow-blue-600/30" href="https://AIJobschool.short.gy/lD9nHF">立即加入</a>
     </div>
   </div>
 
-  <!-- HERO -->
   <header class="pt-24 md:pt-28 pb-16 gradient-hero relative overflow-hidden">
     <div class="absolute -top-24 -right-24 h-80 w-80 rounded-full bg-primary-500/20 blur-3xl"></div>
     <div class="mx-auto max-w-7xl px-6">
       <div class="grid md:grid-cols-2 items-center gap-10">
         <div>
-          <span class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-primary-200/90 bg-white/5 px-3 py-1 rounded-full border border-white/10">非工程師也能上手 · n8n × ChatGPT × LINE</span>
+          <span class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-primary-600/90 bg-white/5 px-3 py-1 rounded-full border border-gray-200">非工程師也能上手 · n8n × ChatGPT × LINE</span>
           <h1 class="mt-5 text-4xl md:text-5xl font-extrabold leading-tight">
-            告別加班地獄！<span class="text-primary-300">AI 自動化行銷</span>，讓你每天多出 <span class="underline decoration-accent-600">2 小時</span>
+            告別加班地獄！<span class="text-primary-600">AI 自動化行銷</span>，讓你每天多出 <span class="underline decoration-blue-600">2 小時</span>
           </h1>
-          <p class="mt-5 text-slate-300 text-lg">視覺化拖拉就能完成自動化：從內容生成、名單整理、社群發文到 LINE 自動客服，一次學會、立刻上線。</p>
+          <p class="mt-5 text-gray-600 text-lg">視覺化拖拉就能完成自動化：從內容生成、名單整理、社群發文到 LINE 自動客服，一次學會、立刻上線。</p>
           <div class="mt-8 flex flex-wrap items-center gap-3">
-            <a id="ctaHero" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-accent-600 px-6 py-3 text-lg font-semibold hover:bg-accent-700 shadow-lg shadow-accent-600/30 focus:outline-none focus:shadow-glow" href="https://AIJobschool.short.gy/1pfFx7">
+            <a id="ctaHero" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-blue-600 px-6 py-3 text-lg font-semibold text-white hover:bg-blue-700 shadow-lg shadow-blue-600/30 focus:outline-none focus:shadow-glow" href="https://AIJobschool.short.gy/1pfFx7">
               立即加入課程
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
             </a>
-            <a href="#outline" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl border border-white/15 hover:border-white/30">
+            <a href="#outline" class="inline-flex items-center gap-2 px-5 py-3 rounded-2xl border border-primary-300 hover:border-primary-400 text-primary-700">
               看課綱
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path d="M10.75 3a.75.75 0 00-1.5 0v6.19L6.53 6.47a.75.75 0 10-1.06 1.06l4 4 .02.02a.75.75 0 001.06 0l4.02-4.02a.75.75 0 10-1.06-1.06L10.75 9.19V3z" /></svg>
             </a>
           </div>
-          <ul class="mt-6 grid grid-cols-2 gap-3 text-sm text-slate-300">
-            <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-400"></span> 8 大即用模板</li>
-            <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-400"></span> 視覺化拖拉、零程式</li>
-            <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-400"></span> 3–5 分鐘短單元</li>
-            <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-400"></span> 14 天安心保證</li>
+          <ul class="mt-6 grid grid-cols-2 gap-3 text-sm text-gray-600">
+            <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-500"></span> 8 大即用模板</li>
+            <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-500"></span> 視覺化拖拉、零程式</li>
+            <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-500"></span> 3–5 分鐘短單元</li>
+            <li class="flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-500"></span> 14 天安心保證</li>
           </ul>
         </div>
         <div class="relative">
-          <div class="glass rounded-3xl border border-white/10 p-6">
+          <div class="bg-white rounded-3xl border border-gray-200 p-6 shadow-xl">
             <div class="grid grid-cols-2 gap-4 text-sm">
-              <div class="bg-white/5 rounded-xl p-4">
-                <p class="text-slate-300">沒有 AI 自動化</p>
-                <ul class="mt-2 space-y-1 text-slate-400 list-disc list-inside">
+              <div class="bg-gray-100 rounded-xl p-4 border border-gray-200">
+                <p class="text-gray-600">沒有 AI 自動化</p>
+                <ul class="mt-2 space-y-1 text-gray-500 list-disc list-inside">
                   <li>手動回覆訊息</li>
                   <li>人工整理名單</li>
                   <li>臨時趕發文</li>
                   <li>加班到深夜</li>
                 </ul>
               </div>
-              <div class="bg-emerald-400/10 rounded-xl p-4 border border-emerald-400/20">
-                <p class="text-emerald-300">有 AI 自動化</p>
-                <ul class="mt-2 space-y-1 text-emerald-200 list-disc list-inside">
+              <div class="bg-emerald-100 rounded-xl p-4 border border-emerald-200">
+                <p class="text-emerald-700 font-semibold">有 AI 自動化</p>
+                <ul class="mt-2 space-y-1 text-emerald-600 list-disc list-inside">
                   <li>LINE 自動客服</li>
                   <li>一鍵產生內容</li>
                   <li>名單自動分類</li>
@@ -104,256 +101,245 @@
                 </ul>
               </div>
             </div>
-            <div class="mt-4 text-xs text-slate-400">* 87% 的行銷人員已開始嘗試 AI 工具。</div>
+            <div class="mt-4 text-xs text-gray-500">* 87% 的行銷人員已開始嘗試 AI 工具。</div>
           </div>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- 痛點區 -->
   <section class="py-16" id="pain">
     <div class="mx-auto max-w-6xl px-6">
       <div class="grid md:grid-cols-2 gap-10 items-start">
         <div>
           <h2 class="text-3xl font-bold">你是否也遇到這些問題？</h2>
-          <p class="mt-3 text-slate-300">重複性工作佔據精力、被瑣碎任務綁架，永遠在救火。</p>
+          <p class="mt-3 text-gray-600">重複性工作佔據精力、被瑣碎任務綁架，永遠在救火。</p>
           <ul class="mt-6 space-y-4">
             <li class="flex gap-4">
-              <div class="h-10 w-10 rounded-xl bg-white/5 flex items-center justify-center border border-white/10">⏰</div>
+              <div class="h-10 w-10 rounded-xl bg-gray-100 flex items-center justify-center border border-gray-200">⏰</div>
               <div>
                 <p class="font-semibold">時間不夠用</p>
-                <p class="text-slate-400">回覆、排程、匯整… 每天在重複相同的動作。</p>
+                <p class="text-gray-500">回覆、排程、匯整… 每天在重複相同的動作。</p>
               </div>
             </li>
             <li class="flex gap-4">
-              <div class="h-10 w-10 rounded-xl bg-white/5 flex items-center justify-center border border-white/10">📑</div>
+              <div class="h-10 w-10 rounded-xl bg-gray-100 flex items-center justify-center border border-gray-200">📑</div>
               <div>
                 <p class="font-semibold">流程無法擴張</p>
-                <p class="text-slate-400">人力有限、任務無限，成長被卡住。</p>
+                <p class="text-gray-500">人力有限、任務無限，成長被卡住。</p>
               </div>
             </li>
             <li class="flex gap-4">
-              <div class="h-10 w-10 rounded-xl bg-white/5 flex items-center justify-center border border-white/10">📉</div>
+              <div class="h-10 w-10 rounded-xl bg-gray-100 flex items-center justify-center border border-gray-200">📉</div>
               <div>
                 <p class="font-semibold">沒跟上 AI 浪潮</p>
-                <p class="text-slate-400">不學自動化，很快就被新一代行銷人超車。</p>
+                <p class="text-gray-500">不學自動化，很快就被新一代行銷人超車。</p>
               </div>
             </li>
           </ul>
         </div>
-        <div class="glass rounded-3xl border border-white/10 p-8">
+        <div class="bg-white rounded-3xl border border-gray-200 p-8 shadow-xl">
           <h3 class="text-xl font-semibold">理想狀態會是什麼樣？</h3>
-          <p class="mt-2 text-slate-300">你的 AI 行銷大腦 24/7 持續運轉，幫你節省時間、降低焦慮、專注策略。</p>
+          <p class="mt-2 text-gray-600">你的 AI 行銷大腦 24/7 持續運轉，幫你節省時間、降低焦慮、專注策略。</p>
           <div class="mt-6 grid grid-cols-3 gap-4 text-center text-sm">
-            <div class="rounded-xl bg-emerald-500/10 p-4 border border-emerald-400/20">
-              <p class="text-2xl font-extrabold">+2h</p>
-              <p class="text-emerald-200">每日自由</p>
+            <div class="rounded-xl bg-emerald-100 p-4 border border-emerald-200">
+              <p class="text-2xl font-extrabold text-emerald-700">+2h</p>
+              <p class="text-emerald-600">每日自由</p>
             </div>
-            <div class="rounded-xl bg-primary-500/10 p-4 border border-primary-400/20">
-              <p class="text-2xl font-extrabold">60%</p>
-              <p class="text-primary-200">效率提升</p>
+            <div class="rounded-xl bg-primary-100 p-4 border border-primary-200">
+              <p class="text-2xl font-extrabold text-primary-700">60%</p>
+              <p class="text-primary-600">效率提升</p>
             </div>
-            <div class="rounded-xl bg-white/5 p-4 border border-white/10">
-              <p class="text-2xl font-extrabold">0</p>
-              <p class="text-slate-300">程式基礎</p>
+            <div class="rounded-xl bg-gray-100 p-4 border border-gray-200">
+              <p class="text-2xl font-extrabold text-gray-700">0</p>
+              <p class="text-gray-600">程式基礎</p>
             </div>
           </div>
-          <a id="ctaPain" class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-accent-600 px-6 py-3 font-semibold hover:bg-accent-700" href="https://AIJobschool.short.gy/wNe5OS">我想要這樣的工作方式</a>
+          <a id="ctaPain" class="mt-6 inline-flex w-full items-center justify-center gap-2 rounded-2xl bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700" href="https://AIJobschool.short.gy/wNe5OS">我想要這樣的工作方式</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 課程價值與特色 -->
-  <section class="py-16 bg-slate-900/40 border-y border-white/5" id="value">
+  <section class="py-16 bg-gray-100 border-y border-gray-200" id="value">
     <div class="mx-auto max-w-6xl px-6">
       <h2 class="text-3xl font-bold">像玩樂高一樣，拼出你的 AI 行銷大腦</h2>
-      <p class="mt-3 text-slate-300">8 大即用模板 + 視覺化拖拉 + 從零開始</p>
+      <p class="mt-3 text-gray-600">8 大即用模板 + 視覺化拖拉 + 從零開始</p>
       <div class="mt-8 grid md:grid-cols-4 gap-6">
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5">
+        <div class="rounded-2xl p-5 border border-gray-200 bg-white shadow-md">
           <h3 class="font-semibold">自動客服 🤖</h3>
-          <p class="text-slate-400 mt-1">LINE / IG / FB 私訊自動回覆與分流。</p>
+          <p class="text-gray-500 mt-1">LINE / IG / FB 私訊自動回覆與分流。</p>
         </div>
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5">
+        <div class="rounded-2xl p-5 border border-gray-200 bg-white shadow-md">
           <h3 class="font-semibold">內容生成 ✍️</h3>
-          <p class="text-slate-400 mt-1">文章、貼文、標題、Hashtag 一鍵產出。</p>
+          <p class="text-gray-500 mt-1">文章、貼文、標題、Hashtag 一鍵產出。</p>
         </div>
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5">
+        <div class="rounded-2xl p-5 border border-gray-200 bg-white shadow-md">
           <h3 class="font-semibold">名單整理 📋</h3>
-          <p class="text-slate-400 mt-1">自動標籤、去重、寫入表單/試算表。</p>
+          <p class="text-gray-500 mt-1">自動標籤、去重、寫入表單/試算表。</p>
         </div>
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5">
+        <div class="rounded-2xl p-5 border border-gray-200 bg-white shadow-md">
           <h3 class="font-semibold">社群發文 📢</h3>
-          <p class="text-slate-400 mt-1">多平台排程，素材自動帶入。</p>
+          <p class="text-gray-500 mt-1">多平台排程，素材自動帶入。</p>
         </div>
       </div>
       <div class="mt-8">
-        <a id="ctaValue" class="inline-flex items-center gap-2 rounded-2xl bg-accent-600 px-6 py-3 font-semibold hover:bg-accent-700" href="https://AIJobschool.short.gy/p0DzXH">拿走 8 大模板，直接套用</a>
+        <a id="ctaValue" class="inline-flex items-center gap-2 rounded-2xl bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700" href="https://AIJobschool.short.gy/p0DzXH">拿走 8 大模板，直接套用</a>
       </div>
     </div>
   </section>
 
-  <!-- 目標受眾 -->
   <section class="py-16" id="audience">
     <div class="mx-auto max-w-6xl px-6">
       <h2 class="text-3xl font-bold">這門課適合誰？</h2>
       <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <!-- 6 cards -->
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5">
-          <p class="text-sm text-primary-300">初學者</p>
+        <div class="rounded-2xl p-5 border border-gray-200 bg-white shadow-md">
+          <p class="text-sm text-primary-600">初學者</p>
           <h3 class="font-semibold mt-1">零基礎也能學</h3>
-          <p class="text-slate-400 mt-1">從 0 到 1，視覺化拖拉，先做再懂。</p>
+          <p class="text-gray-500 mt-1">從 0 到 1，視覺化拖拉，先做再懂。</p>
         </div>
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5">
-          <p class="text-sm text-primary-300">行銷從業者</p>
+        <div class="rounded-2xl p-5 border border-gray-200 bg-white shadow-md">
+          <p class="text-sm text-primary-600">行銷從業者</p>
           <h3 class="font-semibold mt-1">擺脫手動地獄</h3>
-          <p class="text-slate-400 mt-1">把重複性任務交給機器。</p>
+          <p class="text-gray-500 mt-1">把重複性任務交給機器。</p>
         </div>
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5">
-          <p class="text-sm text-primary-300">社群經營者</p>
+        <div class="rounded-2xl p-5 border border-gray-200 bg-white shadow-md">
+          <p class="text-sm text-primary-600">社群經營者</p>
           <h3 class="font-semibold mt-1">穩定互動不漏接</h3>
-          <p class="text-slate-400 mt-1">自動回覆、分流、統計。</p>
+          <p class="text-gray-500 mt-1">自動回覆、分流、統計。</p>
         </div>
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5">
-          <p class="text-sm text-primary-300">自媒體創作者</p>
+        <div class="rounded-2xl p-5 border border-gray-200 bg-white shadow-md">
+          <p class="text-sm text-primary-600">自媒體創作者</p>
           <h3 class="font-semibold mt-1">持續輸出不斷電</h3>
-          <p class="text-slate-400 mt-1">主題庫 × 模板化內容。</p>
+          <p class="text-gray-500 mt-1">主題庫 × 模板化內容。</p>
         </div>
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5">
-          <p class="text-sm text-primary-300">自動化愛好者</p>
+        <div class="rounded-2xl p-5 border border-gray-200 bg-white shadow-md">
+          <p class="text-sm text-primary-600">自動化愛好者</p>
           <h3 class="font-semibold mt-1">需要系統化範例</h3>
-          <p class="text-slate-400 mt-1">拿走即用流程，直接客製。</p>
+          <p class="text-gray-500 mt-1">拿走即用流程，直接客製。</p>
         </div>
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5">
-          <p class="text-sm text-primary-300">創業者 / 自由接案</p>
+        <div class="rounded-2xl p-5 border border-gray-200 bg-white shadow-md">
+          <p class="text-sm text-primary-600">創業者 / 自由接案</p>
           <h3 class="font-semibold mt-1">用 AI 取代人力</h3>
-          <p class="text-slate-400 mt-1">降本增效，快速交付。</p>
+          <p class="text-gray-500 mt-1">降本增效，快速交付。</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 課程大綱（問題導向 + 案例） -->
-  <section class="py-16 bg-slate-900/40 border-y border-white/5" id="outline">
+  <section class="py-16 bg-gray-100 border-y border-gray-200" id="outline">
     <div class="mx-auto max-w-6xl px-6">
       <h2 class="text-3xl font-bold">課程大綱：每一模組都能立刻上線</h2>
       <div class="mt-8 space-y-6">
-        <details class="group rounded-2xl border border-white/10 bg-white/5 p-5" open>
+        <details class="group rounded-2xl border border-gray-200 bg-white p-5 shadow-md" open>
           <summary class="flex cursor-pointer items-center justify-between">
             <div class="font-semibold">模組 1｜告別手動地獄：AI 自動化如何解放你的時間？</div>
             <span class="transition group-open:rotate-180">⌄</span>
           </summary>
-          <p class="mt-3 text-slate-300 text-sm">案例：每天回覆 120 則私訊、整理名單到半夜 → 佈署 LINE 自動客服 + 試算表寫入，省下 2 小時。</p>
-          <ul class="mt-3 list-disc list-inside text-slate-400 text-sm">
+          <p class="mt-3 text-gray-600 text-sm">案例：每天回覆 120 則私訊、整理名單到半夜 → 佈署 LINE 自動客服 + 試算表寫入，省下 2 小時。</p>
+          <ul class="mt-3 list-disc list-inside text-gray-500 text-sm">
             <li>n8n 介面與節點思維（輸入/處理/輸出）</li>
             <li>Webhook、Google Sheet、HTTP Request 快速上手</li>
             <li>錯誤處理與重試、Log 監控</li>
           </ul>
         </details>
-        <details class="group rounded-2xl border border-white/10 bg-white/5 p-5">
+        <details class="group rounded-2xl border border-gray-200 bg-white p-5 shadow-md">
           <summary class="flex cursor-pointer items-center justify-between">
             <div class="font-semibold">模組 2｜沒程式背景？用樂高化拼圖學會自動化</div>
             <span class="transition group-open:rotate-180">⌄</span>
           </summary>
-          <p class="mt-3 text-slate-300 text-sm">案例：行銷實習生 3 小時完成第一條自動化，隔天即用於活動報名處理。</p>
-          <ul class="mt-3 list-disc list-inside text-slate-400 text-sm">
+          <p class="mt-3 text-gray-600 text-sm">案例：行銷實習生 3 小時完成第一條自動化，隔天即用於活動報名處理。</p>
+          <ul class="mt-3 list-disc list-inside text-gray-500 text-sm">
             <li>常見 8 大節點模組化：觸發、分流、轉換、模板</li>
             <li>API 不可怕：用範本抄就會</li>
             <li>實作：表單 → 審核 → 通知（Email/LINE）</li>
           </ul>
         </details>
-        <details class="group rounded-2xl border border-white/10 bg-white/5 p-5">
+        <details class="group rounded-2xl border border-gray-200 bg-white p-5 shadow-md">
           <summary class="flex cursor-pointer items-center justify-between">
             <div class="font-semibold">模組 3｜行銷人必學：自動客服、內容生成、名單整理</div>
             <span class="transition group-open:rotate-180">⌄</span>
           </summary>
-          <p class="mt-3 text-slate-300 text-sm">案例：活動週期，粉專訊息暴增 → GPT 分類、關鍵字跳轉、交給真人。</p>
-          <ul class="mt-3 list-disc list-inside text-slate-400 text-sm">
+          <p class="mt-3 text-gray-600 text-sm">案例：活動週期，粉專訊息暴增 → GPT 分類、關鍵字跳轉、交給真人。</p>
+          <ul class="mt-3 list-disc list-inside text-gray-500 text-sm">
             <li>ChatGPT 提示工程 × 範本化</li>
             <li>多平台內容生成（IG/FB/YT/部落格）</li>
             <li>名單清洗、去重、標籤與 CRM 串接</li>
           </ul>
         </details>
-        <details class="group rounded-2xl border border-white/10 bg-white/5 p-5">
+        <details class="group rounded-2xl border border-gray-200 bg-white p-5 shadow-md">
           <summary class="flex cursor-pointer items-center justify-between">
             <div class="font-semibold">模組 4｜一鍵部署與維運：讓你的 AI 行銷系統持續運作</div>
             <span class="transition group-open:rotate-180">⌄</span>
           </summary>
-          <p class="mt-3 text-slate-300 text-sm">案例：排程健康檢查 + 例外警示，避免廣告期掉單。</p>
-          <ul class="mt-3 list-disc list-inside text-slate-400 text-sm">
+          <p class="mt-3 text-gray-600 text-sm">案例：排程健康檢查 + 例外警示，避免廣告期掉單。</p>
+          <ul class="mt-3 list-disc list-inside text-gray-500 text-sm">
             <li>排程、速率限制、金鑰安全</li>
             <li>版本管理、備份、監控與告警</li>
             <li>上線清單（Checklist）</li>
           </ul>
         </details>
       </div>
-      <a id="ctaOutline" class="mt-8 inline-flex items-center gap-2 rounded-2xl bg-accent-600 px-6 py-3 font-semibold hover:bg-accent-700" href="https://AIJobschool.short.gy/htJbu3">我要從第一堂開始</a>
+      <a id="ctaOutline" class="mt-8 inline-flex items-center gap-2 rounded-2xl bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700" href="https://AIJobschool.short.gy/htJbu3">我要從第一堂開始</a>
     </div>
   </section>
 
-  <!-- 社會證明與案例 -->
   <section class="py-16" id="proof">
     <div class="mx-auto max-w-6xl px-6">
       <h2 class="text-3xl font-bold">學員見證：Before → After</h2>
       <div class="mt-8 grid md:grid-cols-3 gap-6">
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5">
-          <p class="text-slate-400 text-sm">Before：每天 150 則訊息、回到凌晨</p>
-          <p class="mt-2 font-semibold text-emerald-300">After：LINE 自動客服上線，平均每天省下 2 小時</p>
+        <div class="rounded-2xl p-5 border border-gray-200 bg-white shadow-md">
+          <p class="text-gray-500 text-sm">Before：每天 150 則訊息、回到凌晨</p>
+          <p class="mt-2 font-semibold text-emerald-600">After：LINE 自動客服上線，平均每天省下 2 小時</p>
         </div>
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5">
-          <p class="text-slate-400 text-sm">Before：手動整理報名名單</p>
-          <p class="mt-2 font-semibold text-emerald-300">After：自動寫入 + 標籤，效率提升 60%</p>
+        <div class="rounded-2xl p-5 border border-gray-200 bg-white shadow-md">
+          <p class="text-gray-500 text-sm">Before：手動整理報名名單</p>
+          <p class="mt-2 font-semibold text-emerald-600">After：自動寫入 + 標籤，效率提升 60%</p>
         </div>
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5">
-          <p class="text-slate-400 text-sm">Before：內容生產不穩定</p>
-          <p class="mt-2 font-semibold text-emerald-300">After：模板化生成，每週固定 8–12 篇</p>
+        <div class="rounded-2xl p-5 border border-gray-200 bg-white shadow-md">
+          <p class="text-gray-500 text-sm">Before：內容生產不穩定</p>
+          <p class="mt-2 font-semibold text-emerald-600">After：模板化生成，每週固定 8–12 篇</p>
         </div>
       </div>
-      <a id="ctaProof" class="mt-8 inline-flex items-center gap-2 rounded-2xl bg-accent-600 px-6 py-3 font-semibold hover:bg-accent-700" href="https://AIJobschool.short.gy/FbnX9Y">我也要這樣的成效</a>
+      <a id="ctaProof" class="mt-8 inline-flex items-center gap-2 rounded-2xl bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700" href="https://AIJobschool.short.gy/FbnX9Y">我也要這樣的成效</a>
     </div>
   </section>
 
-  <!-- 講師介紹 -->
-  
-  <!-- AIJob 學院介紹（精簡版） -->
-  <section class="py-20 bg-gradient-to-b from-slate-950 to-slate-900 border-y border-white/5" id="about-aijob">
+  <section class="py-20 bg-gray-100 border-y border-gray-200" id="about-aijob">
     <div class="mx-auto max-w-6xl px-6 text-center">
-      <span class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-primary-200/90 bg-white/5 px-3 py-1 rounded-full border border-white/10">引爆 AI 實戰新時代</span>
-      <h2 class="mt-4 text-3xl font-extrabold">關於 <span class="text-primary-300">AIJob</span></h2>
-      <p class="mt-3 text-slate-300">我們是一群熱愛 AI 與教學的實戰派，專注把複雜的人工智慧變簡單，幫助個人與企業在效率時代中快速度過渡與升級。</p>
+      <span class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-primary-600/90 bg-white px-3 py-1 rounded-full border border-gray-200">引爆 AI 實戰新時代</span>
+      <h2 class="mt-4 text-3xl font-extrabold">關於 <span class="text-primary-600">AIJob</span></h2>
+      <p class="mt-3 text-gray-600">我們是一群熱愛 AI 與教學的實戰派，專注把複雜的人工智慧變簡單，幫助個人與企業在效率時代中快速度過渡與升級。</p>
 
-      <!-- 成效指標 -->
       <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-5 text-left">
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5"><p class="text-2xl font-extrabold text-primary-200">2000+</p><p class="text-slate-300 text-sm mt-1">學員累積</p></div>
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5"><p class="text-2xl font-extrabold text-emerald-200">180+</p><p class="text-slate-300 text-sm mt-1">企業合作與內訓</p></div>
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5"><p class="text-2xl font-extrabold text-fuchsia-200">80+</p><p class="text-slate-300 text-sm mt-1">實戰主題與範例</p></div>
-        <div class="rounded-2xl p-5 border border-white/10 bg-white/5"><p class="text-2xl font-extrabold text-indigo-200">95%</p><p class="text-slate-300 text-sm mt-1">滿意度（問卷回饋）</p></div>
+        <div class="rounded-2xl p-5 border border-gray-200 bg-white shadow-md"><p class="text-2xl font-extrabold text-primary-700">2000+</p><p class="text-gray-600 text-sm mt-1">學員累積</p></div>
+        <div class="rounded-2xl p-5 border border-gray-200 bg-white shadow-md"><p class="text-2xl font-extrabold text-emerald-700">180+</p><p class="text-gray-600 text-sm mt-1">企業合作與內訓</p></div>
+        <div class="rounded-2xl p-5 border border-gray-200 bg-white shadow-md"><p class="text-2xl font-extrabold text-fuchsia-700">80+</p><p class="text-gray-600 text-sm mt-1">實戰主題與範例</p></div>
+        <div class="rounded-2xl p-5 border border-gray-200 bg-white shadow-md"><p class="text-2xl font-extrabold text-indigo-700">95%</p><p class="text-gray-600 text-sm mt-1">滿意度（問卷回饋）</p></div>
       </div>
 
-      <!-- 使命 / 願景 / 價值觀 -->
       <div class="mt-12 grid md:grid-cols-3 gap-6 text-left">
-        <div class="rounded-2xl p-6 border border-white/10 bg-white/5">
+        <div class="rounded-2xl p-6 border border-gray-200 bg-white shadow-md">
           <h3 class="font-semibold">我們的使命</h3>
-          <p class="text-slate-300 text-sm mt-2">把 AI 做成人人可用的生產工具，讓每位學員在不需工程背景下，也能用可視化方式把流程自動化、把時間拿回來。</p>
-          <ul class="mt-3 text-slate-400 text-sm list-disc list-inside">
+          <p class="text-gray-600 text-sm mt-2">把 AI 做成人人可用的生產工具，讓每位學員在不需工程背景下，也能用可視化方式把流程自動化、把時間拿回來。</p>
+          <ul class="mt-3 list-disc list-inside text-gray-500 text-sm">
             <li>降低 AI 學習門檻，讓技術普及化</li>
             <li>提供實戰導向的課程與內容</li>
             <li>建立分享與共學的社群文化</li>
           </ul>
         </div>
-        <div class="rounded-2xl p-6 border border-white/10 bg-white/5">
+        <div class="rounded-2xl p-6 border border-gray-200 bg-white shadow-md">
           <h3 class="font-semibold">我們的願景</h3>
-          <p class="text-slate-300 text-sm mt-2">成為華人圈領先的 AI 實戰教育品牌，培育萬名 AI 應用人才，讓企業與個人都能從 AI 中獲利。</p>
-          <ul class="mt-3 text-slate-400 text-sm list-disc list-inside">
+          <p class="text-gray-600 text-sm mt-2">成為華人圈領先的 AI 實戰教育品牌，培育萬名 AI 應用人才，讓企業與個人都能從 AI 中獲利。</p>
+          <ul class="mt-3 list-disc list-inside text-gray-500 text-sm">
             <li>成為領導品牌、制定實戰標準</li>
             <li>推動社會進步與數位轉型</li>
             <li>連結全球，打造多語在地化內容</li>
           </ul>
         </div>
-        <div class="rounded-2xl p-6 border border-white/10 bg-white/5">
+        <div class="rounded-2xl p-6 border border-gray-200 bg-white shadow-md">
           <h3 class="font-semibold">核心價值</h3>
-          <ul class="mt-2 text-slate-300 text-sm space-y-2">
+          <ul class="mt-2 text-gray-600 text-sm space-y-2">
             <li>🎯 實戰導向：問題 → 解法 → 上線</li>
             <li>🚀 持續創新：教學與範例每月更新</li>
             <li>🤝 學員至上：Discord / LINE 即時支援</li>
@@ -364,107 +350,101 @@
     </div>
   </section>
 
-<section class="py-16 bg-slate-900/40 border-y border-white/5" id="teacher">
+<section class="py-16 bg-gray-100 border-y border-gray-200" id="teacher">
     <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-10 items-center">
       <div class="order-2 md:order-1">
         <h2 class="text-3xl font-bold">講師介紹</h2>
-        <p class="mt-3 text-slate-300">Jacky｜AI 自動化顧問 · 獵頭顧問 · 人力資源管理碩士</p>
-        <!-- 三個強而有力的標籤 -->
+        <p class="mt-3 text-gray-600">Jacky｜AI 自動化顧問 · 獵頭顧問 · 人力資源管理碩士</p>
         <div class="mt-3 flex flex-wrap gap-2 text-xs">
-          <span class="inline-flex items-center gap-1 rounded-full border border-white/15 bg-white/5 px-3 py-1">⚡ AI 自動化顧問</span>
-          <span class="inline-flex items-center gap-1 rounded-full border border-white/15 bg-white/5 px-3 py-1">🎯 獵頭顧問</span>
-          <span class="inline-flex items-center gap-1 rounded-full border border-white/15 bg-white/5 px-3 py-1">🎓 人力資源管理碩士</span>
+          <span class="inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-3 py-1">⚡ AI 自動化顧問</span>
+          <span class="inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-3 py-1">🎯 獵頭顧問</span>
+          <span class="inline-flex items-center gap-1 rounded-full border border-gray-300 bg-white px-3 py-1">🎓 人力資源管理碩士</span>
         </div>
-        <!-- 補充亮點實績 -->
-        <ul class="mt-4 space-y-2 text-slate-300 text-sm">
+        <ul class="mt-4 space-y-2 text-gray-600 text-sm">
           <li>✔ 企業管理系畢業，<b>人力資源管理研究所</b>碩士</li>
           <li>✔ 曾任企業 <b>HR</b>：招募 / 教育訓練 / 組織發展</li>
           <li>✔ <b>非工程師背景</b>，從 0→1 自建 AI 自動化流程</li>
           <li>✔ 協助新創行銷公司：<b>AI 串接 × 私域維護 × 公域社群（FB/IG/Threads）自動化</b></li>
           <li>✔ <b>AI 網頁設計</b>與 n8n / ChatGPT / LINE 整合落地</li>
         </ul>
-        <a id="ctaTeacher" class="mt-6 inline-flex items-center gap-2 rounded-2xl bg-accent-600 px-6 py-3 font-semibold hover:bg-accent-700" href="https://AIJobschool.short.gy/FbnX9Y">跟著實戰派學</a>
+        <a id="ctaTeacher" class="mt-6 inline-flex items-center gap-2 rounded-2xl bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700" href="https://AIJobschool.short.gy/FbnX9Y">跟著實戰派學</a>
       </div>
       <div class="order-1 md:order-2">
-        <img src="https://static.wixstatic.com/media/9705bb_29bb1edd690f48b89236d95633062e88~mv2.png" alt="講師 Jacky 照片" class="rounded-3xl border border-white/10 bg-white/5 object-cover w-full shadow-2xl" />
+        <img src="https://static.wixstatic.com/media/9705bb_29bb1edd690f48b89236d95633062e88~mv2.png" alt="講師 Jacky 照片" class="rounded-3xl border border-gray-200 bg-white object-cover w-full shadow-2xl" />
       </div>
     </div>
   </section>
-  <!-- 講師 × AIJob｜學習見證與關係 -->
   <section class="py-20" id="story">
     <div class="mx-auto max-w-6xl px-6 grid md:grid-cols-2 gap-10 items-start">
       <div class="order-2 md:order-1">
-        <h2 class="text-3xl font-bold">我如何從 HR 走到 <span class="text-primary-300">AI 自動化教學</span></h2>
-        <p class="mt-3 text-slate-300 text-sm leading-relaxed">
+        <h2 class="text-3xl font-bold">我如何從 HR 走到 <span class="text-primary-600">AI 自動化教學</span></h2>
+        <p class="mt-3 text-gray-600 text-sm leading-relaxed">
           我是一位 HR、獵頭顧問，<b>完全不會寫程式</b>。直到與上一份工作的老闆合作，接觸到 n8n，開始學習 AI 自動化，
           並成功在一家新創行銷公司導入整套流程：<b>減少 1–2 位人力成本</b>、日常營運效率大幅提升。
         </p>
-        <ul class="mt-4 text-slate-300 text-sm space-y-2">
+        <ul class="mt-4 text-gray-600 text-sm space-y-2">
           <li>✔ <b>非工程師視角</b>，把流程拆成可視化積木，照做就會</li>
           <li>✔ 私域（LINE/Discord）與公域（FB/IG/Threads）自動化整合</li>
           <li>✔ 與 <b>AIJob 學院</b>共同打造「從 0→1 的實作課」與企業內訓方案</li>
         </ul>
-        <div class="mt-5 rounded-2xl border border-white/10 bg-white/5 p-4 text-sm text-slate-300">
+        <div class="mt-5 rounded-2xl border border-gray-200 bg-white p-4 text-sm text-gray-600 shadow-md">
           <b>我與 AIJob 的關係：</b> 共同創辦與講師之一，負責把複雜的自動化流程「翻譯成」非工程師也能上手的樂高化教學，
           並與專業顧問團隊一起提供 <b>Discord 社群、LINE 官方帳號即時支援</b>、企業顧問與內訓導入服務。
         </div>
         <a id="ctaStory" 
    href="https://AIJobschool.short.gy/cgTjtM"
-   class="mt-6 inline-flex items-center gap-2 rounded-2xl bg-accent-600 px-6 py-3 font-semibold hover:bg-accent-700">
+   class="mt-6 inline-flex items-center gap-2 rounded-2xl bg-blue-600 px-6 py-3 font-semibold text-white hover:bg-blue-700">
    我要用非工程師方法學會 AI 自動化
 </a>
       </div>
-      <div class="order-1 md:order-2 glass rounded-3xl border border-white/10 p-6">
+      <div class="order-1 md:order-2 bg-white rounded-3xl border border-gray-200 p-6 shadow-xl">
         <h3 class="font-semibold">導入成效（節錄）</h3>
-        <ul class="mt-3 text-slate-300 text-sm list-disc list-inside">
+        <ul class="mt-3 text-gray-600 text-sm list-disc list-inside">
           <li>客服回覆與名單處理自動化，每天 <b>節省 1–2 小時</b></li>
           <li>社群內容自動生成與排程，團隊產出更穩定</li>
           <li>表單 → CRM → 通知 全自動串接，<b>人力成本 -1 ~ -2 位</b></li>
         </ul>
-        <p class="mt-4 text-xs text-slate-400">* 成效依產業與流程複雜度而異，上述案例來自實際導入專案。</p>
+        <p class="mt-4 text-xs text-gray-500">* 成效依產業與流程複雜度而異，上述案例來自實際導入專案。</p>
       </div>
     </div>
   </section>
 
 
-  <!-- FAQ -->
   <section class="py-16" id="faq">
     <div class="mx-auto max-w-6xl px-6">
       <h2 class="text-3xl font-bold">常見疑問</h2>
       <div class="mt-8 space-y-4">
-        <details class="rounded-2xl border border-white/10 bg-white/5 p-5" open>
+        <details class="rounded-2xl border border-gray-200 bg-white p-5 shadow-md" open>
           <summary class="font-semibold cursor-pointer">我不會寫程式，學得會嗎？</summary>
-          <p class="mt-2 text-slate-300 text-sm">可以。本課程 100% 視覺化拖拉、樂高化模組，照做就會。</p>
+          <p class="mt-2 text-gray-600 text-sm">可以。本課程 100% 視覺化拖拉、樂高化模組，照做就會。</p>
         </details>
-        <details class="rounded-2xl border border-white/10 bg-white/5 p-5">
+        <details class="rounded-2xl border border-gray-200 bg-white p-5 shadow-md">
           <summary class="font-semibold cursor-pointer">我很忙，沒有時間完整上完？</summary>
-          <p class="mt-2 text-slate-300 text-sm">每節 15–20 分鐘，邊看邊做，當天就能上線其中一條流程。</p>
+          <p class="mt-2 text-gray-600 text-sm">每節 15–20 分鐘，邊看邊做，當天就能上線其中一條流程。</p>
         </details>
-        <details class="rounded-2xl border border-white/10 bg-white/5 p-5">
+        <details class="rounded-2xl border border-gray-200 bg-white p-5 shadow-md">
           <summary class="font-semibold cursor-pointer">投資回報如何？</summary>
-          <p class="mt-2 text-slate-300 text-sm">平均每天幫你省 2 小時，數週內即可回本；並持續複利你的時間。</p>
+          <p class="mt-2 text-gray-600 text-sm">平均每天幫你省 2 小時，數週內即可回本；並持續複利你的時間。</p>
         </details>
       </div>
     </div>
   </section>
 
-  <!-- CTA + 保證 -->
-  <section class="py-16 bg-slate-900/40 border-y border-white/5" id="cta">
+  <section class="py-16 bg-gray-100 border-y border-gray-200" id="cta">
     <div class="mx-auto max-w-6xl px-6 text-center">
       <h2 class="text-3xl font-extrabold">立即加入，告別被瑣事綁架的工作模式！</h2>
-      <p class="mt-3 text-slate-300">限時優惠｜原價 <span class="line-through">NT$4,500</span> → <span class="text-emerald-300 font-semibold">NT$3,500</span> · 限量 50 名 · 填寫課程報名單再<strong class="text-emerald-200">折 NT$300</strong> · <span class="text-slate-200">14 天內不滿意全額退款</span></p>
+      <p class="mt-3 text-gray-600">限時優惠｜原價 <span class="line-through">NT$4,500</span> → <span class="text-red-600 font-semibold">NT$3,500</span> · 限量 <span class="text-red-600">50</span> 名 · 填寫課程報名單再<strong class="text-red-600">折 NT$300</strong> · <span class="text-gray-700">14 天內不滿意全額退款</span></p>
       <div class="mt-6 flex items-center justify-center gap-3">
-        <a id="ctaBottom" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-accent-600 px-8 py-4 text-lg font-semibold hover:bg-accent-700 shadow-lg shadow-accent-600/30" href="https://AIJobschool.short.gy/8clone">
+        <a id="ctaBottom" class="inline-flex items-center justify-center gap-2 rounded-2xl bg-blue-600 px-8 py-4 text-lg font-semibold text-white hover:bg-blue-700 shadow-lg shadow-blue-600/30" href="https://AIJobschool.short.gy/8clone">
           立即搶位
         </a>
-        <a href="#outline" class="inline-flex items-center justify-center gap-2 rounded-2xl border border-white/15 px-8 py-4 text-lg hover:border-white/30">看看課綱</a>
+        <a href="#outline" class="inline-flex items-center justify-center gap-2 rounded-2xl border border-primary-300 px-8 py-4 text-lg hover:border-primary-400 text-primary-700">看看課綱</a>
       </div>
-      <div class="mt-6 text-sm text-slate-400">倒數：<span id="mainCountdown" class="font-semibold text-slate-100">--:--:--</span></div>
+      <div class="mt-6 text-sm text-gray-500">倒數：<span id="mainCountdown" class="font-semibold text-gray-700">--:--:--</span></div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="py-10 text-center text-xs text-slate-400">
+  <footer class="py-10 text-center text-xs text-gray-500">
     <div class="mx-auto max-w-6xl px-6">
       <p>© <span id="y"></span> AIJob 自動化學院 · 所有權利保留</p>
       <p class="mt-2">* 本頁所列數據為示意，實際成效依個別執行情境而異。</p>
@@ -495,7 +475,7 @@
     }
     function bindCTAs() {
       const map = {
-        ctaTop: 'top', ctaHero: 'hero', ctaPain: 'pain', ctaValue: 'value', ctaOutline: 'outline', ctaProof: 'proof', ctaTeacher: 'teacher', ctaBottom: 'bottom'
+        ctaTop: 'top', ctaHero: 'hero', ctaPain: 'pain', ctaValue: 'value', ctaOutline: 'outline', ctaProof: 'proof', ctaTeacher: 'teacher', ctaStory: 'story', ctaBottom: 'bottom'
       };
       Object.entries(map).forEach(([id, tag]) => {
         const el = document.getElementById(id);
